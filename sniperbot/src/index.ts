@@ -152,7 +152,7 @@ websocketHandler().catch((err) => {
 
 
 
-//   const connection = new Connection("https://mainnet.helius-rpc.com/?api-key=e03f73dd-b374-4473-972a-fe974c5525c4", {
+//   const connection = new Connection("process.env.HTTPS_URI", {
 //     commitment: 'confirmed',
 //   });
 

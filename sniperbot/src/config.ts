@@ -85,13 +85,13 @@ export const config = {
     allow_rugged: false,
     allow_graph_insiders: false,
     // Critical
-    allow_mutable: false,
+    allow_mutable: true,
     block_returning_token_names: false,
     block_returning_token_creators: false,
     block_symbols: ["XXX"],
     block_names: ["XXX"],
     allow_insider_topholders: true, // Allow insider accounts to be part of the topholders
-    max_alowed_pct_topholders: 15, // Max allowed percentage an individual topholder might hold
+    max_alowed_pct_topholders: 30, // Max allowed percentage an individual topholder might hold
     exclude_lp_from_topholders: true, // If true, Liquidity Pools will not be seen as top holders
     // Warning
     min_total_markets: 1,
@@ -99,8 +99,8 @@ export const config = {
     min_total_market_Liquidity: 1000,
     // Misc
     ignore_pump_fun: false,
-    // max_score: 11400, // Set to 0 to ignore
-    max_score: 0, // Set to 0 to ignore
+    max_score: 10000, // Set to 0 to ignore
+    // max_score: 0, // Set to 0 to ignore
     legacy_not_allowed: [
       "Low Liquidity",
       "Single holder ownership",

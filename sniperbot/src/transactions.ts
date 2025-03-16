@@ -114,10 +114,6 @@ export async function fetchTransactionDetails(signature: string): Promise<MintsD
       }
 
       console.log("Successfully fetched transaction details!");
-      console.log(`SOL Mint: ${solMint}`);
-      console.log(`New Token Mint: ${tokenMint}`);
-      console.log(`Base Vault: ${baseVault}`);
-      console.log(`Quote Vault: ${quoteVault}`);
 
       const displayData: MintsDataReponse = {
         solMint,
